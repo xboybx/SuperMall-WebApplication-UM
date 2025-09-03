@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    @apply border-neutral-200;
+  }
+  body {
+    @apply bg-neutral-50 text-neutral-900 font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-500 bg-white text-primary-500 hover:bg-primary-50 px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+
+  .btn-cart {
+    @apply bg-warning-500 text-white hover:bg-warning-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200;
+  }
+
+  .btn-buy {
+    @apply bg-primary-500 text-white hover:bg-primary-600 px-8 py-3 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200;
+  }
+  
+  .input {
+    @apply flex h-12 w-full rounded-lg border-2 border-neutral-200 bg-white px-4 py-3 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-card hover:shadow-card-hover border border-neutral-200 transition-all duration-300;
+  }
+
+  .product-card {
+    @apply bg-white rounded-xl shadow-product hover:shadow-product-hover border border-neutral-200 overflow-hidden transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .category-card {
+    @apply bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl shadow-card hover:shadow-card-hover border border-neutral-200 overflow-hidden transition-all duration-300 hover:scale-105;
+  }
+
+  .offer-badge {
+    @apply bg-gradient-to-r from-error-500 to-accent-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md;
+  }
+
+  .price-tag {
+    @apply text-2xl font-bold text-success-600;
+  }
+
+  .original-price {
+    @apply text-lg text-neutral-500 line-through;
+  }
+
+  .discount-badge {
+    @apply bg-success-500 text-white px-2 py-1 rounded text-xs font-semibold;
+  }
+
+  .rating-stars {
+    @apply flex items-center space-x-1;
+  }
+
+  .search-bar {
+    @apply w-full h-12 px-4 py-3 border-2 border-neutral-300 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all duration-200;
+  }
+
+  .filter-chip {
+    @apply bg-neutral-100 hover:bg-primary-100 text-neutral-700 hover:text-primary-700 px-4 py-2 rounded-full text-sm font-medium cursor-pointer transition-all duration-200;
+  }
+
+  .filter-chip-active {
+    @apply bg-primary-500 text-white px-4 py-2 rounded-full text-sm font-medium cursor-pointer;
+  }
+}
