@@ -2,7 +2,7 @@
 
 SuperMall is a comprehensive e-commerce platform that connects rural merchants with global customers, providing tools for shop management, product listings, and promotional offers.
 
-[*Live*](https://supermall-webapplication-um.onrender.com)
+[*Preview the Project*](https://supermall-webapplication-um.onrender.com)
 ## Features
 
 ### For Customers
